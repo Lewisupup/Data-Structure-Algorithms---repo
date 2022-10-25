@@ -39,5 +39,3 @@ if __name__ == '__main__':
     arr = [12, 11, 13, 5, 6, 8, 94, 192, 101]
     sorted_arr = merge_sort(arr)
     print(f'Sorted Array is: {sorted_arr}')
-
-# END
