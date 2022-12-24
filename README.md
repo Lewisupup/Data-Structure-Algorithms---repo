@@ -4,3 +4,5 @@ This repository contains most commonly used algorithms for computer science prob
   2. Merge Sort VS Quick Sort
   3. Topological Sort 
   4. KMP algorithm
+  5. Radix & Bucket Sort
+  6. Heap Sort
