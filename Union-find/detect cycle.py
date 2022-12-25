@@ -4,13 +4,13 @@ from collections import defaultdict
 class Unionfind:
     def __init__(self, N):
         self.root = [i for i in range(N)]
-
+    # find last element in current set
     def find(self, x):
         if self.root[x] == x:
             return x
 
         return self.find(self.root[x])
-
+    # join two distinct set
     def union(self, x, y):
         self.root[x] = y
 
@@ -30,12 +30,14 @@ def detect(Graph):
 
     for u in graph:
         for v in graph[u]:
+            # if two element already in set, will be two edges between one pair of node
+            # cycle detected
             find_u = uf.find(u)
             find_v = uf.find(v)
 
             if find_u == find_v:
                 return True
-
+            # join two distinct sets
             uf.union(u, v)
 
     return False
