@@ -6,3 +6,4 @@ This repository contains most commonly used algorithms for computer science prob
   4. KMP algorithm
   5. Radix & Bucket Sort
   6. Heap Sort
+  7. Union-find
